@@ -1,12 +1,3 @@
-/**
- * @Description  :  
- * @Author       : WhiteWizard
- * @Version      : 0.0.1
- * @LastEditors  : WhiteWizard
- * @LastEditTime : 2023-05-03 16:34:29
- * @Copyright    : G AUTOMOBILE RESEARCH INSTITUTE CO.,LTD Copyright (c) 2023.
-**/
-
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -54,13 +45,12 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-osThreadId_t flightStatueTaskHandle;
-const osThreadAttr_t flightStatueTask_attributes = {
-  .name = "flightStatue",
+osThreadId_t powerManagementTaskHandle;
+const osThreadAttr_t powerManagementTask_attributes = {
+  .name = "powerManagement",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -72,7 +62,7 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-void FlightStartueTask(void *arguement);
+void powerManagementTask(void *arguement);
 
 /* USER CODE END FunctionPrototypes */
 
@@ -111,7 +101,7 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  flightStatueTaskHandle = osThreadNew(FlightStartueTask, NULL, &flightStatueTask_attributes);
+  powerManagementTaskHandle = osThreadNew(powerManagementTask, NULL, &powerManagementTask_attributes);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -121,19 +111,6 @@ void MX_FREERTOS_Init(void) {
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
-/**
- * @brief Get the statue of flight 
- * @param arguement:Not used
- * @retval None
-**/
-void FlightStartueTask(void *arguement)
-{
-  while (1)
-  {
-    osDelay(1);
-  }
-  
-}
 /**
   * @brief  Function implementing the defaultTask thread.
   * @param  argument: Not used

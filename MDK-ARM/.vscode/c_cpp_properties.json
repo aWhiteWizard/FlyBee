@@ -3,6 +3,7 @@
         {
             "name": "FlyBee",
             "includePath": [
+                "f:\\Program Files\\FlyBee\\App\\Inc",
                 "f:\\Program Files\\FlyBee\\Core\\Inc",
                 "f:\\Program Files\\FlyBee\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
                 "f:\\Program Files\\FlyBee\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
@@ -15,6 +16,7 @@
                 "E:\\MDK5\\ARM\\ARMCC\\include\\rw",
                 "f:\\Program Files\\FlyBee\\MDK-ARM",
                 "f:\\Program Files\\FlyBee\\Core\\Src",
+                "f:\\Program Files\\FlyBee\\App\\Src",
                 "f:\\Program Files\\FlyBee\\Drivers\\STM32F4xx_HAL_Driver\\Src",
                 "f:\\Program Files\\FlyBee\\Middlewares\\Third_Party\\FreeRTOS\\Source",
                 "f:\\Program Files\\FlyBee\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"

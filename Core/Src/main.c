@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "crc.h"
 #include "dma.h"
 #include "i2c.h"
 #include "tim.h"
@@ -96,6 +97,7 @@ int main(void)
   MX_TIM4_Init();
   MX_I2C1_Init();
   MX_USB_OTG_FS_USB_Init();
+  MX_CRC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -112,11 +114,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-  
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
+
 /**
   * @brief System Clock Configuration
   * @retval None

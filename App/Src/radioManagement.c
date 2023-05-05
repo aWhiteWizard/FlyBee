@@ -3,7 +3,7 @@
  * @Author       : WhiteWizard
  * @Version      : 0.0.1
  * @LastEditors  : WhiteWizard
- * @LastEditTime : 2023-05-05 20:48:05
+ * @LastEditTime : 2023-05-05 22:32:17
  * @Copyright    : G AUTOMOBILE RESEARCH INSTITUTE CO.,LTD Copyright (c) 2023.
 **/
 #include "radioManagement.h"
@@ -19,7 +19,7 @@ void radioInit(void)
     
 }
 
-PMstatue getPowerStatue()
+void radioDataunpacked(atkp_t *rxPacket)
 {
-    return poweron;
+    
 }

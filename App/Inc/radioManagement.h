@@ -3,11 +3,12 @@
  * @Author       : WhiteWizard
  * @Version      : 0.0.1
  * @LastEditors  : WhiteWizard
- * @LastEditTime : 2023-05-03 18:34:31
+ * @LastEditTime : 2023-05-05 21:15:35
  * @Copyright    : G AUTOMOBILE RESEARCH INSTITUTE CO.,LTD Copyright (c) 2023.
 **/
 #pragma anon_unions
-#include ""
+
+#include "atkPackage.h"
 #ifndef __POWERMANAGER_H__
 #define __POWERMANAGER_H__
 

@@ -8,7 +8,7 @@ CDefines=USE_HAL_DRIVER;STM32F411xE;USE_HAL_DRIVER;USE_HAL_DRIVER;
 
 [PreviousGenFiles]
 AdvancedFolderStructure=true
-HeaderFileListSize=11
+HeaderFileListSize=12
 HeaderFiles#0=..\Core\Inc\gpio.h
 HeaderFiles#1=..\Core\Inc\FreeRTOSConfig.h
 HeaderFiles#2=..\Core\Inc\crc.h
@@ -19,8 +19,9 @@ HeaderFiles#6=..\Core\Inc\usb_otg.h
 HeaderFiles#7=..\Core\Inc\stm32f4xx_it.h
 HeaderFiles#8=..\Core\Inc\stm32f4xx_hal_conf.h
 HeaderFiles#9=..\Core\Inc\main.h
-HeaderFiles#9=..\App\Inc\radioManagement.h
-HeaderFolderListSize=1
+HeaderFiles#10=..\App\Inc\radioManagement.h
+HeaderFiles#11=..\App\Inc\atkPackage.h
+HeaderFolderListSize=2
 HeaderPath#0=..\Core\Inc
 HeaderPath#1=..\App\Inc
 HeaderFiles=;
